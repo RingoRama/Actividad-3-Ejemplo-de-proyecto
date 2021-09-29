@@ -1,0 +1,85 @@
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>ThinkGeek</title>
+	
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/stilos.css"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+	<script src="js/modernizr.custom.js"></script>
+	
+</head>
+
+<body style="background-color:#0f0f0f;">
+	
+	<header>
+		<div id="logo"></div>
+	</header>
+
+	<div class="navbar">
+  <a href="index.html">INICIO</a>
+  <a href="contacto.html">CONTACTO</a>
+  <a href="nosotros.html">NOSOTROS</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">FRANQUICIAS
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="franquicias/jjba.html">JoJo's Bizarre Adventure</a>
+    <a href="franquicias/luckystar.html">Lucky★Star</a>
+    <a href="franquicias/blend s.html">Blend S</a>
+    <a href="franquicias/aot.html">Attack On Titan</a>
+    <a href="franquicias/ddlc.html">Doki Doki Literature Club!</a>
+    <a href="franquicias/evangelion.html">Neon Genesis Evangelion</a>
+    <a href="franquicias/varias.html">Franquicias varias</a>
+
+  </div>
+  </div> 
+</div>
+
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+<div id="titulos">
+    | Nosotros
+</div>
+
+<div id="contexto">
+    Somos una empresa encargada de la distribución de productos relacionados al mundo del anime o manga, ThinkGeek se caracteriza por la alta calidad y carácter de sus productos y servicios. Desde los productos rigurosamente seleccionados a la rapidez y a la cortesía en el servicio; de la limpieza en las instalaciones a los cuidados con la decoración del ambiente, todo es concebido para proporcionar una experiencia extraordinaria, que se traduce en gran sastisfacción al comprar nuestros productos, la cual, es única en el mercado.<br><br>
+
+    En México, la red es operada desde 2017 por Renato "Ringo" Rivas, C.E.O. de la marca ThinkGeek en toda América Latina. La compañía opera en el país desde 2002, conquistando nuevos clientes día a día.<br><br>
+
+
+    ThinkGeek México recibe a más de dos mil consumidores que pasan cada año por las tiendas de la red en todo el país. Gracias a eso, México es uno de los mayores mercados de la corporación en Latinoamérica.<br><br>
+
+
+    Actualmente, posee más de 40 puntos de venta, entre locaciones, centros de venta y kioskos en más de 10 ciudades de 6 Estados de la República y la Ciudad de México.<br><br>
+</div>
+
+<div id="imagengenerica2"></div>
+
+<br><br><br><br><br>
+  <footer>|  Lucky★Star  |  JoJo's Bizarre Adventure  |  Blend S  |  Attack On Titan  | <br />
+    <a href="index.html">|  ThinkGeek  |</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>ThinkGeek</title>
+	
+	<link rel="stylesheet" type="text/css" href="../engine1/style.css" />
+	<script type="text/javascript" src="../engine1/jquery.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../css/stilos.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/component.css"/>
+	<script src="../js/modernizr.custom.js"></script>
+	
+</head>
+
+<body style="background-color:#0f0f0f;">
+	
+	<header>
+		<div id="logo"></div>
+	</header>
+
+	<div class="navbar">
+  <a href="../index.html">INICIO</a>
+  <a href="../contacto.html">CONTACTO</a>
+  <a href="../nosotros.html">NOSOTROS</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">FRANQUICIAS
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="jjba.html">JoJo's Bizarre Adventure</a>
+    <a href="luckystar.html">Lucky★Star</a>
+    <a href="blend s.html">Blend S</a>
+    <a href="aot.html">Attack On Titan</a>
+    <a href="ddlc.html">Doki Doki Literature Club!</a>
+    <a href="evangelion.html">Neon Genesis Evangelion</a>
+    <a href="varias.html">Franquicias varias</a>
+
+  </div>
+  </div> 
+</div>
+
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+<div id="contexto"> <br> </div>
+  <section id="intro">
+    <article id="conte-intro"><br />
+      <div id="titulo-intro">Peluche Guido Mista</div>
+      <div id="txt-producto">Muñeco de peluche de Guido Mista de la franquicia JoJo's Bizarre Adventure<br>Precio: 400$MXN<br>30 unidades disponibles <br/><br/>
+      </div>
+      <img src="jjba-productos/img1.jpg" id="img-producto">
+      </div>
+    </article>
+  </section>
+  <div id="contexto"> <br> </div>
+
+  <div id="titulos"><a href="jjba.html">
+    Volver
+  </a></div>
+
+  <footer>|  Lucky★Star  |  JoJo's Bizarre Adventure  |  Blend S  |  Attack On Titan  | <br />
+    <a href="../index.html">|  ThinkGeek  |</a>
+  </footer>
+
+</body>
+</html>

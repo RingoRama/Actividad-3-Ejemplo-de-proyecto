@@ -1,0 +1,97 @@
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>ThinkGeek</title>
+	
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/stilos.css"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+	<script src="js/modernizr.custom.js"></script>
+	
+</head>
+
+<body style="background-color:#0f0f0f;">
+	
+	<header>
+		<div id="logo"></div>
+	</header>
+
+	<div class="navbar">
+  <a href="index.html">INICIO</a>
+  <a href="contacto.html">CONTACTO</a>
+  <a href="nosotros.html">NOSOTROS</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">FRANQUICIAS
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="franquicias/jjba.html">JoJo's Bizarre Adventure</a>
+    <a href="franquicias/luckystar.html">Lucky★Star</a>
+    <a href="franquicias/blend s.html">Blend S</a>
+    <a href="franquicias/aot.html">Attack On Titan</a>
+    <a href="franquicias/ddlc.html">Doki Doki Literature Club!</a>
+    <a href="franquicias/evangelion.html">Neon Genesis Evangelion</a>
+    <a href="franquicias/varias.html">Franquicias varias</a>
+
+  </div>
+  </div> 
+</div>
+
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+	<section id="bann">
+		<div id="banner">
+			<div id="wowslider-container1">
+			<div class="ws_images">
+			<ul>
+			<li><img src="data1/images/h1.jpg" alt="h1" title="h1" id="wows1_0"/></li>
+			<li><img src="data1/images/h2.jpg" alt="h2" title="h2" id="wows1_1"/></li>
+			<li><img src="data1/images/h3.jpg" alt="h3" title="h3" id="wows1_2"/></li>
+			<li><img src="data1/images/h4.jpg" alt="h4" title="h4" id="wows1_3"/></li>
+			</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="engine1/wowslider.js"></script>
+		<script type="text/javascript" src="engine1/script.js"></script>
+	</section>
+
+	<br>
+
+	<div id="titulos">
+		| ThinkGeek
+	</div>
+	<div id="contexto">
+		ThinkGeek es una empresa dedicada a la satisfacción de productos para gente perteneciente a la creciente cultura otaku y friki en este país.
+		Nos comprometemos a satisfacer cualquier necesidad que usted requiera, figuras, posters, peluches, manga, ¡tenemos de todo!
+		Visitenos y descubra.
+	</div>
+
+	<div id="imagengenerica"></div>
+
+	<br><br><br><br><br>
+	<footer>|  Lucky★Star  |  JoJo's Bizarre Adventure  |  Blend S  |  Attack On Titan  | <br />
+		<a href="index.html">|  ThinkGeek  |</a>
+	</footer>
+
+
+</body>
+</html>
